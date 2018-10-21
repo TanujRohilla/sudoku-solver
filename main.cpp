@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <stdio.h>
 
 using namespace std;
 
@@ -189,14 +190,28 @@ int main()
 
     }
     cout<<"\nSolution of Sudoku:\n\n";
+    cout<<"\n _______________________________\n";
+    cout<<" |         |         |         |\n";
     for(i=0;i<9;i++)
     {
+
         for(j=0;j<9;j++)
         {
-
+            if (j==0)
+                cout<<" |  ";
             cout<<arr[i][j]<<" ";
+            if ( j%3 == 2 )
+                cout<<" |  ";
+
         }
-        cout<<endl;
+        if (i%3==2)
+        {
+            cout<<"\n |_________|_________|_________|\n";
+            cout<<" |         |         |         |";
+        }
+
+        cout<<"\n";
+
 
     }
 
