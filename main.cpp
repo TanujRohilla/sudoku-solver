@@ -142,17 +142,14 @@ int checkBlock(int arr[9][9],int i,int j,int num)
 
 int main()
 {
-    int arr[9][9]={ {0,6,0,3,0,0,0,9,0},
-                    {7,9,0,0,6,8,0,2,0},
-                    {3,1,0,7,0,4,0,6,8},
-                    {6,7,0,4,1,0,0,0,0},
-                    {0,0,0,0,0,0,0,0,0},
-                    {0,0,0,0,3,9,0,4,7},
-                    {2,8,0,5,0,6,0,1,4},
-                    {0,5,0,8,4,0,0,7,2},
-                    {0,3,0,0,0,1,0,8,0} };
+    int arr[9][9];
     int count_row=0,count_col=0,count_block=0,pos_i,pos_j,flag=0,ans;
     int i,j,k;
+
+    for (int i=0;i<9;i++)       // input sudoko matrix
+        for(int j=0;j<9;j++)
+            cin>>arr[i][j];
+
     l1:
     for(i=0;i<9;i++)
     {
