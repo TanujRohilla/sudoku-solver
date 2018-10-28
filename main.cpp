@@ -7,7 +7,7 @@ using namespace std;
 int checkRow(int arr[9][9],int row,int num)
 {
     /*
-        Objective: Check whether number present in row or not
+        Objective: Check whether number is present in row or not
         Input:     array, row, number to be searched in row i.e, num
         Return:    0 if number is present in row, 1 if number is not present in row
     */
@@ -28,7 +28,7 @@ int checkRow(int arr[9][9],int row,int num)
 int checkCol(int arr[9][9],int col,int num)
 {
     /*
-        Objective: Check whether number present in column or not
+        Objective: Check whether number is present in column or not
         Input:     array, row, number to be searched in column i.e, num
         Return:    0 if number is present in column, 1 if number is not present in column
     */
@@ -49,7 +49,7 @@ int checkCol(int arr[9][9],int col,int num)
 int checkBlock(int arr[9][9],int i,int j,int num)
 {
     /*
-        Objective: Check whether number present in block or not
+        Objective: Check whether number is present in block or not
         Input:     array, index (i,j) of number , number to be searched in block i.e, num
         Return:    0 if number is present in row, 1 if number is not present in row
     */
