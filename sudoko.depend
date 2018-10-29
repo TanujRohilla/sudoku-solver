@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1540131999 source:/home/tanuj/c++ program/sudoko/main.cpp
-	<iostream>
-	<cmath>
-	<stdio.h>
-
